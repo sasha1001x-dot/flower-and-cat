@@ -7,7 +7,7 @@ const libraryNotice = {
     "如果你认为宠物生病、可能摄入有毒物质，或对条目的适用范围有疑问，请及时联系兽医。疑似高危接触不要等待症状或识别结果，不要自行催吐、喂药或强行喂水。"
   ],
   "source": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants",
-  "attribution": "说明参考 ASPCA 植物列表，并结合花猫的收录范围整理；本项目并非 ASPCA 官方产品。"
+  "attribution": "说明参考 ASPCA 植物列表，并结合花与爪的收录范围整理；本项目并非 ASPCA 官方产品。"
 }
 ;
 const identities = [
@@ -2704,7 +2704,7 @@ function learn(value,id,validIds){const s=normalize(value);if(!validIds.includes
 function summary(value,records,validIds,now=Date.now()){
  const s=normalize(value),today=day(now);const learned=s.learned.filter(id=>validIds.includes(id));const experiencePlants=[...new Set((Array.isArray(records)?records:[]).filter(r=>validIds.includes(r.plantId)&&String(r.content||'').trim().length>=10).map(r=>r.plantId))];
  let streak=0;let cursor=Date.parse(today+'T00:00:00+08:00');if(!s.days.includes(today))cursor-=86400000;while(s.days.includes(day(cursor))){streak++;cursor-=86400000}
- const tracks=[{key:'learn',label:'认识植物',unit:'份档案',count:learned.length,steps:[3,10,20,30],names:['初识花草','花间漫步','绿意同行','花猫探索家']},{key:'days',label:'每日打卡',unit:'天',count:s.days.filter(d=>d<=today).length,steps:[3,7,30],names:['三日之约','一周陪伴','长情花友']},{key:'experience',label:'记录经验',unit:'份植物档案',count:experiencePlants.length,steps:[1,3,10],names:['第一篇手记','生活观察员','花与它的记录者']}];
+ const tracks=[{key:'learn',label:'认识植物',unit:'份档案',count:learned.length,steps:[3,10,20,30],names:['初识花草','花间漫步','绿意同行','花与爪探索家']},{key:'days',label:'每日打卡',unit:'天',count:s.days.filter(d=>d<=today).length,steps:[3,7,30],names:['三日之约','一周陪伴','长情花友']},{key:'experience',label:'记录经验',unit:'份植物档案',count:experiencePlants.length,steps:[1,3,10],names:['第一篇手记','生活观察员','花与它的记录者']}];
  const badges=tracks.flatMap(t=>t.steps.map((n,i)=>({id:t.key+'-'+n,title:t.names[i],requirement:t.label+' '+n+' '+t.unit,unlocked:t.count>=n,current:Math.min(t.count,n),target:n,percent:Math.min(100,Math.floor(t.count/n*100))})));
  return {today,checked:s.days.includes(today),streak,learnedCount:learned.length,dayCount:tracks[1].count,experienceCount:experiencePlants.length,badges,unlocked:badges.filter(b=>b.unlocked).length,next:badges.find(b=>!b.unlocked&&b.id.startsWith('learn-'))||null};
 }
@@ -2715,10 +2715,18 @@ return {day,normalize,checkIn,learn,summary};
 const Community = (()=>{
 const categories=['养花求助','养宠防护','经验分享','闲聊日常'];
 function clean(value,max,min,label){const s=String(value||'').trim();if(s.length<min||s.length>max)throw new Error(label+'请填写'+min+'至'+max+'字');return s}
-function author(profile){if(!profile||!profile.id)throw new Error('请先登录');return {authorId:profile.id,nickname:profile.nickname||'花猫铲屎官',identityType:profile.identityType||''}}
+function author(profile){if(!profile||!profile.id)throw new Error('请先登录');return {authorId:profile.id,nickname:profile.nickname||'花与爪铲屎官',identityType:profile.identityType||''}}
 function create(input,profile,now=Date.now(),random=Math.random()){if(!categories.includes(input.category))throw new Error('请选择有效分类');return {...author(profile),id:now.toString(36)+'-'+random.toString(36).slice(2,10),title:clean(input.title,60,4,'标题'),content:clean(input.content,2000,10,'正文'),category:input.category,createdAt:now,date:new Date(now+8*3600000).toISOString().slice(0,10),replies:[],scope:'local'}}
 function reply(post,input,profile,now=Date.now(),random=Math.random()){if(!post||!post.id)throw new Error('帖子不存在');const r={...author(profile),id:now.toString(36)+'-'+random.toString(36).slice(2,10),content:clean(input.content,1000,5,'回复'),createdAt:now,date:new Date(now+8*3600000).toISOString().slice(0,10)};return {...post,replies:[...(post.replies||[]),r]}}
 function list(posts,category='全部',query=''){const q=String(query).trim().toLowerCase();return posts.filter(p=>(category==='全部'||p.category===category)&&(!q||(p.title+' '+p.content).toLowerCase().includes(q))).slice().sort((a,b)=>b.createdAt-a.createdAt)}
 return {categories,create,reply,list};
 
 })();
+
+// Editorial help content, never user posts or professional review records.
+const Guides= [
+ {id:'plant-names',tag:'辨名入门',title:'同叫“百合”，为什么会查到不同植物？',answer:'常用名、商品名和学名不是一回事。“百合”的搜索结果会列出相关物种、园艺类群及容易混淆的名称。先对照植物标签与学名，再阅读对应档案；候选列表不代表已经确认植物身份。',action:'搜索百合相关档案',query:'百合'},
+ {id:'flower-checklist',tag:'买花之前',title:'养宠家庭买花，先看哪几件事？',answer:'先向商家确认植物名称与标签，尽可能取得学名；在图鉴里分别查看猫咪和狗狗的信息，再阅读来源适用范围与防护建议。把需要反复查看的档案收藏起来。名称不明或未收录时，不把它当作安全植物。',action:'去植物图鉴查一查',query:''},
+ {id:'photo-service',tag:'拍照说明',title:'拍了照片，为什么暂时没有识别结果？',answer:'当前版本可体验确认后拍照、相册选择和本机预览，但真实识别云服务尚未接通。照片不会在选择后自动上传；服务配置完成后，还需要单独确认才会发送识别。现在可以先使用名称搜索。',action:'查看拍照入口',page:'identify'},
+ {id:'local-posts',tag:'交流指南',title:'我发出的帖子，其他花友能看到吗？',answer:'目前帖子和回复只保存在当前账号的本机空间，其他用户和设备看不到。这里的常见问题由花与爪整理，不是花友发布的帖子。公共交流开放后，仍需经过相应审核与管理。'}
+];

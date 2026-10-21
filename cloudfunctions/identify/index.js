@@ -5,7 +5,7 @@ function post(url,fields){return new Promise((resolve,reject)=>{const body=new U
 let token,expires=0;
 exports.main=async event=>{
  const {OPENID}=cloud.getWXContext();if(!OPENID)return {error:'请通过微信小程序调用识别服务。'};
- try{const id=require('node:crypto').createHash('sha256').update(OPENID).digest('hex').slice(0,32);const registered=await cloud.database().collection('users').where({_id:id,_openid:OPENID}).limit(1).get();if(!registered.data.length)return {error:'请先登录并注册花猫账号。'};}catch(_){return {error:'账号状态暂时无法验证，请稍后重试。'};}
+ try{const id=require('node:crypto').createHash('sha256').update(OPENID).digest('hex').slice(0,32);const registered=await cloud.database().collection('users').where({_id:id,_openid:OPENID}).limit(1).get();if(!registered.data.length)return {error:'请先登录并注册花与爪账号。'};}catch(_){return {error:'账号状态暂时无法验证，请稍后重试。'};}
  const image=event.image;
  if(typeof image!=='string'||image.length<16||image.length>4*1024*1024||!/^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$/.test(image))return {error:'图片格式不正确或过大。'};
  const bytes=Buffer.from(image,'base64');

@@ -8,6 +8,6 @@ module.exports = {
     "如果你认为宠物生病、可能摄入有毒物质，或对条目的适用范围有疑问，请及时联系兽医。疑似高危接触不要等待症状或识别结果，不要自行催吐、喂药或强行喂水。"
   ],
   "source": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants",
-  "attribution": "说明参考 ASPCA 植物列表，并结合花猫的收录范围整理；本项目并非 ASPCA 官方产品。"
+  "attribution": "说明参考 ASPCA 植物列表，并结合花与爪的收录范围整理；本项目并非 ASPCA 官方产品。"
 }
 ;
