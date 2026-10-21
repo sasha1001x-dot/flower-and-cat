@@ -1,0 +1,4 @@
+const account=require('../../utils/account');
+const growth=require('../../utils/growth');
+const {plants}=require('../../utils/plants');
+Page({data:{g:null,error:''},async onShow(){if(await account.requireAccount('/pages/growth/growth'))this.refresh()},refresh(){try{this.setData({g:growth.summary(wx.getStorageSync(account.ownerKey('growth'))||{},wx.getStorageSync(account.ownerKey('experiences'))||[],plants.map(p=>p.id)),error:''})}catch(_){this.setData({error:'成长记录读取失败，请稍后重试'})}},checkIn(){try{wx.setStorageSync(account.ownerKey('growth'),growth.checkIn(wx.getStorageSync(account.ownerKey('growth'))||{}));this.refresh();wx.showToast({title:'今日打卡成功'})}catch(_){this.setData({error:'保存失败，请重试'})}},browse(){getApp().globalData.libraryRequest={q:'',saved:false};wx.switchTab({url:'/pages/library/library'})}});

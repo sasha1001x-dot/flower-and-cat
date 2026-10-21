@@ -1,0 +1,18 @@
+node_modules/
+.DS_Store
+project.private.config.json
+.env
+.env.*
+!.env.example
+.workbuddy/
+
+# Local design review screenshots; keep source assets in subdirectories.
+/preview/*.png
+
+# Local logs and editor/OS temporary files.
+*.log
+*.tmp
+*.bak
+*~
+__pycache__/
+*.pyc

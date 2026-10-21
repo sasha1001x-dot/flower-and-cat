@@ -1,0 +1,12 @@
+{
+  "appid": "touristappid",
+  "projectname": "huamao",
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "compileType": "miniprogram",
+  "setting": {
+    "es6": true,
+    "enhance": true,
+    "minified": true
+  }
+}

@@ -1,0 +1,7 @@
+.save{margin-top:25rpx}.card .body{margin-top:20rpx}
+
+.experience-input{background:#f2f3ed;padding:20rpx;border-radius:15rpx;margin:15rpx 0 22rpx;height:85rpx}.experience-textarea{background:#f2f3ed;width:100%;padding:22rpx;border-radius:15rpx;min-height:260rpx;font-size:26rpx;line-height:1.8;margin-top:22rpx}.card button,.section+button{margin-top:20rpx}
+
+.plant-facts{margin:28rpx 0;padding:25rpx 0;border-top:1rpx solid #e1e6d9;border-bottom:1rpx solid #e1e6d9}.plant-facts>view{display:flex;gap:20rpx;margin:15rpx 0;font-size:25rpx;line-height:1.8}.plant-facts text{width:160rpx;flex-shrink:0;color:#8a947d}.plant-facts>view>view{flex:1;overflow-wrap:break-word}.scientific-name{font-style:italic}
+
+.plant-introduction{padding:30rpx;background:#fffef9;border:1rpx solid #e1e6d9;border-radius:30rpx}.plant-overview{margin:0}.plant-introduction .plant-facts{margin:25rpx 0 0;padding:18rpx 0;border-bottom:0}.plant-care{border-top:1rpx solid #e1e6d9;padding-top:18rpx}.plant-care>view{display:flex;gap:20rpx;margin:15rpx 0;font-size:25rpx;line-height:1.8}.plant-care text{width:160rpx;flex-shrink:0;color:#8a947d}.plant-care>view>view{flex:1}.plant-introduction .muted{font-size:22rpx;margin-top:16rpx}

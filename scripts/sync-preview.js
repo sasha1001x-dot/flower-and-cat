@@ -1,0 +1,24 @@
+// Preview consumes the same records and decision logic as the mini program.
+const fs=require('node:fs');const path=require('node:path');
+const root=path.resolve(__dirname,'..');const read=p=>fs.readFileSync(path.join(root,p),'utf8');
+const identities=read('miniprogram/data/identities.json');
+fs.copyFileSync(path.join(root,'miniprogram/data/identities.json'),path.join(root,'cloudfunctions/account/identities.json'));
+const data=read('miniprogram/data/plants.js').replace('module.exports =','const plants =');
+const ambiguity=read('miniprogram/data/ambiguities.js').replace('module.exports =','const ambiguities =');
+const logic=read('miniprogram/utils/plants.js').replace(/^const plants = require.*$/m,'').replace(/^const ambiguities = require.*$/m,'').replace('module.exports =','return');
+fs.writeFileSync(path.join(root,'preview/plants.js'),'const libraryNotice = '+read('miniprogram/data/library-notice.json')+';\nconst identities = '+identities+';\n'+data+'\n'+ambiguity+'\nconst Huamao = (()=>{\n'+logic+'\n})();\n');
+console.log('Preview data and decision logic synchronized.');
+
+const experiences=read('miniprogram/utils/experiences.js').replace(/^const identities =?require.*$/m,'').replace(/^const identities=require.*$/m,'').replace('module.exports=','return ');
+fs.appendFileSync(path.join(root,'preview/plants.js'),'\nconst Experiences = (()=>{\n'+experiences+'\n})();\n');
+
+fs.mkdirSync(path.join(root,'preview/assets/identities'),{recursive:true});
+for(const name of ['cat','dog','both'])fs.copyFileSync(path.join(root,'miniprogram/assets/identities',name+'.svg'),path.join(root,'preview/assets/identities',name+'.svg'));
+
+require('./audit-data');
+
+const growth=read('miniprogram/utils/growth.js').replace('module.exports=','return ');
+fs.appendFileSync(path.join(root,'preview/plants.js'),'\nconst Growth = (()=>{\n'+growth+'\n})();\n');
+
+const community=read('miniprogram/utils/community.js').replace('module.exports=','return ');
+fs.appendFileSync(path.join(root,'preview/plants.js'),'\nconst Community = (()=>{\n'+community+'\n})();\n');

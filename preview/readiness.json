@@ -1,0 +1,1150 @@
+{
+  "updatedAt": "2026-10-21",
+  "total": 30,
+  "ready": 0,
+  "withToxicitySource": 30,
+  "withCareSource": 30,
+  "veterinaryApproved": 0,
+  "withVerifiedPhoto": 0,
+  "records": [
+    {
+      "id": "lily",
+      "name": "百合属 · 总览",
+      "latin": "Lilium spp.",
+      "rank": "属级总览",
+      "scene": "鲜花与盆栽",
+      "cat": "high",
+      "dog": "caution",
+      "scope": "属级风险建议；具体物种与品种见独立档案",
+      "sourceCount": 2,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "FDA · 百合与猫",
+          "url": "https://www.fda.gov/animal-veterinary/animal-health-literacy/lovely-lilies-and-curious-cats-dangerous-combination",
+          "kind": "toxicity",
+          "accessed": "2026-10-20",
+          "taxon": "Lilium spp."
+        },
+        {
+          "title": "RHS · 百合养护",
+          "url": "https://www.rhs.org.uk/plants/lilies/how-to-grow-lilies",
+          "kind": "care",
+          "accessed": "2026-10-20",
+          "taxon": "Lilium spp."
+        }
+      ]
+    },
+    {
+      "id": "sago",
+      "name": "苏铁",
+      "latin": "Cycas revoluta",
+      "rank": "物种",
+      "scene": "盆栽与庭院",
+      "cat": "high",
+      "dog": "high",
+      "scope": "来源明确列出该物种",
+      "sourceCount": 2,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "ASPCA · 毒性资料",
+          "url": "https://www.aspca.org/news/animal-poison-control-alert-beware-sago-palms",
+          "kind": "toxicity",
+          "accessed": "2026-10-20",
+          "taxon": "Cycas revoluta"
+        },
+        {
+          "title": "NC State Extension · 分类与养护",
+          "url": "https://plants.ces.ncsu.edu/plants/cycas-revoluta/",
+          "kind": "care",
+          "taxon": "Cycas revoluta",
+          "accessed": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "pothos",
+      "name": "绿萝",
+      "latin": "Epipremnum aureum",
+      "rank": "物种",
+      "scene": "盆栽与庭院",
+      "cat": "toxic",
+      "dog": "toxic",
+      "scope": "来源明确列出该物种",
+      "sourceCount": 2,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "ASPCA · 毒性资料",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/golden-pothos",
+          "kind": "toxicity",
+          "accessed": "2026-10-20",
+          "taxon": "Epipremnum aureum"
+        },
+        {
+          "title": "NC State Extension · 分类与养护",
+          "url": "https://plants.ces.ncsu.edu/plants/epipremnum-aureum/",
+          "kind": "care",
+          "taxon": "Epipremnum aureum",
+          "accessed": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "rose",
+      "name": "月季 / 玫瑰",
+      "latin": "Rosa spp.",
+      "rank": "属级总览",
+      "scene": "鲜花与盆栽",
+      "cat": "low",
+      "dog": "low",
+      "scope": "来源针对 Rosa 属；不适用于所有名称带“玫瑰”的植物",
+      "sourceCount": 2,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "ASPCA · 毒性资料",
+          "url": "https://www.aspca.org/news/mothers-day-bouquets-whats-safe-pets",
+          "kind": "toxicity",
+          "accessed": "2026-10-20",
+          "taxon": "Rosa spp."
+        },
+        {
+          "title": "RHS · 蔷薇属养护",
+          "url": "https://www.rhs.org.uk/plants/roses/growing-guide",
+          "kind": "care",
+          "taxon": "Rosa",
+          "accessed": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "spider",
+      "name": "吊兰",
+      "latin": "Chlorophytum comosum",
+      "rank": "物种",
+      "scene": "盆栽与庭院",
+      "cat": "low",
+      "dog": "low",
+      "scope": "来源明确列出该物种",
+      "sourceCount": 2,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "ASPCA · 毒性资料",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/spider-plant",
+          "kind": "toxicity",
+          "accessed": "2026-10-20",
+          "taxon": "Chlorophytum comosum"
+        },
+        {
+          "title": "NC State Extension · 分类与养护",
+          "url": "https://plants.ces.ncsu.edu/plants/chlorophytum-comosum/",
+          "kind": "care",
+          "taxon": "Chlorophytum comosum",
+          "accessed": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "easter-lily",
+      "name": "麝香百合",
+      "latin": "Lilium longiflorum",
+      "rank": "物种",
+      "scene": "鲜花与盆栽",
+      "cat": "high",
+      "dog": "caution",
+      "scope": "来源明确列出该物种",
+      "sourceCount": 3,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "FDA · 百合与猫",
+          "url": "https://www.fda.gov/animal-veterinary/animal-health-literacy/lovely-lilies-and-curious-cats-dangerous-combination",
+          "kind": "toxicity",
+          "accessed": "2026-10-20",
+          "taxon": "Lilium longiflorum"
+        },
+        {
+          "title": "RHS · 分类与特征",
+          "url": "https://www.rhs.org.uk/plants/75002/lilium-longiflorum-ixb-a/details",
+          "kind": "taxonomy",
+          "accessed": "2026-10-20",
+          "taxon": "Lilium longiflorum"
+        },
+        {
+          "title": "RHS · 百合养护",
+          "url": "https://www.rhs.org.uk/plants/lilies/how-to-grow-lilies",
+          "kind": "care",
+          "accessed": "2026-10-20",
+          "taxon": "Lilium longiflorum"
+        }
+      ]
+    },
+    {
+      "id": "tiger-lily",
+      "name": "卷丹",
+      "latin": "Lilium lancifolium",
+      "rank": "物种",
+      "scene": "鲜花与盆栽",
+      "cat": "high",
+      "dog": "caution",
+      "scope": "来源明确列出该物种",
+      "sourceCount": 3,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "FDA · 百合与猫",
+          "url": "https://www.fda.gov/animal-veterinary/animal-health-literacy/lovely-lilies-and-curious-cats-dangerous-combination",
+          "kind": "toxicity",
+          "accessed": "2026-10-20",
+          "taxon": "Lilium lancifolium"
+        },
+        {
+          "title": "RHS · 分类与特征",
+          "url": "https://www.rhs.org.uk/plants/lilies/how-to-grow-lilies",
+          "kind": "taxonomy",
+          "accessed": "2026-10-20",
+          "taxon": "Lilium lancifolium"
+        },
+        {
+          "title": "RHS · 百合养护",
+          "url": "https://www.rhs.org.uk/plants/lilies/how-to-grow-lilies",
+          "kind": "care",
+          "accessed": "2026-10-20",
+          "taxon": "Lilium lancifolium"
+        }
+      ]
+    },
+    {
+      "id": "stargazer",
+      "name": "观星者百合",
+      "latin": "Lilium 'Stargazer'",
+      "rank": "栽培品种",
+      "scene": "鲜花与盆栽",
+      "cat": "high",
+      "dog": "caution",
+      "scope": "FDA 明确列出此杂交品种",
+      "sourceCount": 3,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "FDA · 百合与猫",
+          "url": "https://www.fda.gov/animal-veterinary/animal-health-literacy/lovely-lilies-and-curious-cats-dangerous-combination",
+          "kind": "toxicity",
+          "accessed": "2026-10-20",
+          "taxon": "Lilium 'Stargazer'"
+        },
+        {
+          "title": "RHS · 分类与特征",
+          "url": "https://www.rhs.org.uk/plants/articles/graham-rice/perennials-and-bulbs/get-growing-lilies",
+          "kind": "taxonomy",
+          "accessed": "2026-10-20",
+          "taxon": "Lilium 'Stargazer'"
+        },
+        {
+          "title": "RHS · 百合养护",
+          "url": "https://www.rhs.org.uk/plants/lilies/how-to-grow-lilies",
+          "kind": "care",
+          "accessed": "2026-10-20",
+          "taxon": "Lilium 'Stargazer'"
+        }
+      ]
+    },
+    {
+      "id": "asiatic",
+      "name": "亚洲百合杂交群",
+      "latin": "Lilium Asiatic hybrids",
+      "rank": "园艺杂交群",
+      "scene": "鲜花与盆栽",
+      "cat": "high",
+      "dog": "caution",
+      "scope": "FDA 明确列出亚洲百合及其杂交品种",
+      "sourceCount": 3,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "FDA · 百合与猫",
+          "url": "https://www.fda.gov/animal-veterinary/animal-health-literacy/lovely-lilies-and-curious-cats-dangerous-combination",
+          "kind": "toxicity",
+          "accessed": "2026-10-20",
+          "taxon": "Lilium Asiatic hybrids"
+        },
+        {
+          "title": "RHS · 分类与特征",
+          "url": "https://www.rhs.org.uk/plants/lilies/how-to-grow-lilies",
+          "kind": "taxonomy",
+          "accessed": "2026-10-20",
+          "taxon": "Lilium Asiatic hybrids"
+        },
+        {
+          "title": "RHS · 百合养护",
+          "url": "https://www.rhs.org.uk/plants/lilies/how-to-grow-lilies",
+          "kind": "care",
+          "accessed": "2026-10-20",
+          "taxon": "Lilium Asiatic hybrids"
+        }
+      ]
+    },
+    {
+      "id": "daylily",
+      "name": "萱草属 · 总览",
+      "latin": "Hemerocallis spp.",
+      "rank": "属级总览",
+      "scene": "盆栽与庭院",
+      "cat": "high",
+      "dog": "unknown",
+      "scope": "属级资料，不能用于确认具体物种",
+      "sourceCount": 2,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录",
+        "至少一种宠物的风险证据未补齐（须人工确认是否按未知状态发布）"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "FDA · 百合与猫",
+          "url": "https://www.fda.gov/animal-veterinary/animal-health-literacy/lovely-lilies-and-curious-cats-dangerous-combination",
+          "kind": "toxicity",
+          "accessed": "2026-10-20",
+          "taxon": "Hemerocallis spp."
+        },
+        {
+          "title": "NC State Extension · 分类与养护",
+          "url": "https://plants.ces.ncsu.edu/plants/hemerocallis/",
+          "kind": "care",
+          "taxon": "Hemerocallis spp.",
+          "accessed": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "peace",
+      "name": "白掌属 · 总览",
+      "latin": "Spathiphyllum spp.",
+      "rank": "属级总览",
+      "scene": "盆栽与庭院",
+      "cat": "toxic",
+      "dog": "toxic",
+      "scope": "属级资料，不能用于确认具体物种",
+      "sourceCount": 2,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "ASPCA · 植物毒性档案",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/peace-lily",
+          "kind": "toxicity",
+          "accessed": "2026-10-20",
+          "taxon": "Spathiphyllum spp."
+        },
+        {
+          "title": "NC State Extension · 分类与养护",
+          "url": "https://plants.ces.ncsu.edu/plants/spathiphyllum/",
+          "kind": "care",
+          "taxon": "Spathiphyllum spp.",
+          "accessed": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "calla",
+      "name": "白花马蹄莲",
+      "latin": "Zantedeschia aethiopica",
+      "rank": "物种",
+      "scene": "鲜花与盆栽",
+      "cat": "toxic",
+      "dog": "toxic",
+      "scope": "来源明确列出该物种",
+      "sourceCount": 2,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "ASPCA · 植物毒性档案",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/calla-lily",
+          "kind": "toxicity",
+          "accessed": "2026-10-20",
+          "taxon": "Zantedeschia aethiopica"
+        },
+        {
+          "title": "NC State Extension · 分类与养护",
+          "url": "https://plants.ces.ncsu.edu/plants/zantedeschia-aethiopica/",
+          "kind": "care",
+          "taxon": "Zantedeschia aethiopica",
+          "accessed": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "chrysanthemum",
+      "name": "菊属 · 总览",
+      "latin": "Chrysanthemum spp.",
+      "rank": "属级总览",
+      "scene": "鲜花与盆栽",
+      "cat": "toxic",
+      "dog": "toxic",
+      "scope": "属级资料，不能用于确认具体物种",
+      "sourceCount": 2,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "ASPCA · 植物毒性档案",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/chrysanthemum",
+          "kind": "toxicity",
+          "accessed": "2026-10-20",
+          "taxon": "Chrysanthemum spp."
+        },
+        {
+          "title": "RHS · 养护参考",
+          "url": "https://www.rhs.org.uk/plants/chrysanthemum/growing-guide",
+          "kind": "care",
+          "accessed": "2026-10-20",
+          "taxon": "Chrysanthemum spp."
+        }
+      ]
+    },
+    {
+      "id": "florist-mum",
+      "name": "栽培菊（杂交类群）",
+      "latin": "Chrysanthemum × morifolium",
+      "rank": "杂交分类单元",
+      "scene": "鲜花与盆栽",
+      "cat": "toxic",
+      "dog": "toxic",
+      "scope": "参考菊属毒性资料；尚无本项目收录的该杂交类群或单一品种独立毒性证据",
+      "sourceCount": 4,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "ASPCA · 植物毒性档案",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/chrysanthemum",
+          "kind": "toxicity",
+          "accessed": "2026-10-20",
+          "taxon": "Chrysanthemum spp.（属级参考）"
+        },
+        {
+          "title": "RHS · 养护参考",
+          "url": "https://www.rhs.org.uk/plants/chrysanthemum/growing-guide",
+          "kind": "care",
+          "accessed": "2026-10-20",
+          "taxon": "Chrysanthemum × morifolium"
+        },
+        {
+          "title": "Kew POWO · 杂交分类单元",
+          "url": "https://powo.science.kew.org/taxon/urn%3Alsid%3Aipni.org%3Anames%3A77111328-1/general-information",
+          "kind": "taxonomy",
+          "accessed": "2026-10-20",
+          "taxon": "Chrysanthemum × morifolium"
+        },
+        {
+          "title": "NParks · 栽培菊",
+          "url": "https://www.nparks.gov.sg/florafaunaweb/flora/8/0/8018",
+          "kind": "taxonomy",
+          "accessed": "2026-10-20",
+          "taxon": "Chrysanthemum × morifolium"
+        }
+      ]
+    },
+    {
+      "id": "gerbera",
+      "name": "非洲菊（G. jamesonii）",
+      "latin": "Gerbera jamesonii",
+      "rank": "物种",
+      "scene": "鲜花与盆栽",
+      "cat": "low",
+      "dog": "low",
+      "scope": "来源明确列出该物种",
+      "sourceCount": 2,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "ASPCA · 植物毒性档案",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/gerber-daisy",
+          "kind": "toxicity",
+          "accessed": "2026-10-20",
+          "taxon": "Gerbera jamesonii"
+        },
+        {
+          "title": "RHS · 养护参考",
+          "url": "https://www.rhs.org.uk/plants/gerbera/growing-guide",
+          "kind": "care",
+          "accessed": "2026-10-20",
+          "taxon": "Gerbera jamesonii"
+        }
+      ]
+    },
+    {
+      "id": "tulip",
+      "name": "郁金香属 · 总览",
+      "latin": "Tulipa spp.",
+      "rank": "属级总览",
+      "scene": "鲜花与球根",
+      "cat": "toxic",
+      "dog": "toxic",
+      "scope": "属级资料，仅作该属参考，不是具体品种鉴定",
+      "sourceCount": 3,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "ASPCA · tulip",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/tulip",
+          "kind": "toxicity",
+          "taxon": "Tulipa spp.",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 分类与特征",
+          "url": "https://plants.ces.ncsu.edu/plants/tulipa/",
+          "kind": "taxonomy",
+          "taxon": "Tulipa spp.",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 养护参考",
+          "url": "https://plants.ces.ncsu.edu/plants/tulipa/",
+          "kind": "care",
+          "taxon": "Tulipa spp.",
+          "accessed": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "carnation",
+      "name": "康乃馨",
+      "latin": "Dianthus caryophyllus",
+      "rank": "物种",
+      "scene": "鲜花",
+      "cat": "toxic",
+      "dog": "toxic",
+      "scope": "来源明确列出该分类单元；仍须确认植物身份",
+      "sourceCount": 3,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "ASPCA · carnation",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/carnation",
+          "kind": "toxicity",
+          "taxon": "Dianthus caryophyllus",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 分类与特征",
+          "url": "https://plants.ces.ncsu.edu/plants/dianthus-caryophyllus/",
+          "kind": "taxonomy",
+          "taxon": "Dianthus caryophyllus",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 养护参考",
+          "url": "https://plants.ces.ncsu.edu/plants/dianthus-caryophyllus/",
+          "kind": "care",
+          "taxon": "Dianthus caryophyllus",
+          "accessed": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "smooth-hydrangea",
+      "name": "乔木绣球",
+      "latin": "Hydrangea arborescens",
+      "rank": "物种",
+      "scene": "鲜花与盆栽",
+      "cat": "toxic",
+      "dog": "toxic",
+      "scope": "来源明确列出该分类单元；仍须确认植物身份",
+      "sourceCount": 3,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "ASPCA · hydrangea",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hydrangea",
+          "kind": "toxicity",
+          "taxon": "Hydrangea arborescens",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 分类与特征",
+          "url": "https://plants.ces.ncsu.edu/plants/hydrangea-arborescens/",
+          "kind": "taxonomy",
+          "taxon": "Hydrangea arborescens",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 养护参考",
+          "url": "https://plants.ces.ncsu.edu/plants/hydrangea-arborescens/",
+          "kind": "care",
+          "taxon": "Hydrangea arborescens",
+          "accessed": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "bigleaf-hydrangea",
+      "name": "大叶绣球",
+      "latin": "Hydrangea macrophylla",
+      "rank": "物种",
+      "scene": "鲜花与盆栽",
+      "cat": "toxic",
+      "dog": "toxic",
+      "scope": "参考属级毒性资料；尚未收录本物种或具体品种的独立毒性证据",
+      "sourceCount": 3,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "Pet Poison Helpline · 绣球属",
+          "url": "https://www.petpoisonhelpline.com/poison/hydrangea/",
+          "kind": "toxicity",
+          "taxon": "Hydrangea spp.",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 分类与特征",
+          "url": "https://plants.ces.ncsu.edu/plants/hydrangea-macrophylla/",
+          "kind": "taxonomy",
+          "taxon": "Hydrangea macrophylla",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 养护参考",
+          "url": "https://plants.ces.ncsu.edu/plants/hydrangea-macrophylla/",
+          "kind": "care",
+          "taxon": "Hydrangea macrophylla",
+          "accessed": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "narcissus",
+      "name": "水仙属 · 总览",
+      "latin": "Narcissus spp.",
+      "rank": "属级总览",
+      "scene": "鲜花与球根",
+      "cat": "toxic",
+      "dog": "toxic",
+      "scope": "属级资料，仅作该属参考，不是具体品种鉴定",
+      "sourceCount": 3,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "ASPCA · daffodil",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/daffodil",
+          "kind": "toxicity",
+          "taxon": "Narcissus spp.",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 分类与特征",
+          "url": "https://plants.ces.ncsu.edu/plants/narcissus/",
+          "kind": "taxonomy",
+          "taxon": "Narcissus spp.",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 养护参考",
+          "url": "https://plants.ces.ncsu.edu/plants/narcissus/",
+          "kind": "care",
+          "taxon": "Narcissus spp.",
+          "accessed": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "hyacinth",
+      "name": "风信子",
+      "latin": "Hyacinthus orientalis",
+      "rank": "物种",
+      "scene": "鲜花与球根",
+      "cat": "toxic",
+      "dog": "toxic",
+      "scope": "来源明确列出该分类单元；仍须确认植物身份",
+      "sourceCount": 3,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "ASPCA · hyacinth",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/hyacinth",
+          "kind": "toxicity",
+          "taxon": "Hyacinthus orientalis",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 分类与特征",
+          "url": "https://plants.ces.ncsu.edu/plants/hyacinthus-orientalis/",
+          "kind": "taxonomy",
+          "taxon": "Hyacinthus orientalis",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 养护参考",
+          "url": "https://plants.ces.ncsu.edu/plants/hyacinthus-orientalis/",
+          "kind": "care",
+          "taxon": "Hyacinthus orientalis",
+          "accessed": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "aloe",
+      "name": "库拉索芦荟",
+      "latin": "Aloe vera",
+      "rank": "物种",
+      "scene": "盆栽",
+      "cat": "toxic",
+      "dog": "toxic",
+      "scope": "来源明确列出该分类单元；仍须确认植物身份",
+      "sourceCount": 3,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "ASPCA · aloe",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/aloe",
+          "kind": "toxicity",
+          "taxon": "Aloe vera",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 分类与特征",
+          "url": "https://plants.ces.ncsu.edu/plants/aloe-vera/",
+          "kind": "taxonomy",
+          "taxon": "Aloe vera",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 养护参考",
+          "url": "https://plants.ces.ncsu.edu/plants/aloe-vera/",
+          "kind": "care",
+          "taxon": "Aloe vera",
+          "accessed": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "monstera",
+      "name": "龟背竹",
+      "latin": "Monstera deliciosa",
+      "rank": "物种",
+      "scene": "盆栽",
+      "cat": "toxic",
+      "dog": "toxic",
+      "scope": "来源明确列出该分类单元；仍须确认植物身份",
+      "sourceCount": 3,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "ASPCA · swiss-cheese-plant",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/swiss-cheese-plant",
+          "kind": "toxicity",
+          "taxon": "Monstera deliciosa",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 分类与特征",
+          "url": "https://plants.ces.ncsu.edu/plants/monstera-deliciosa/",
+          "kind": "taxonomy",
+          "taxon": "Monstera deliciosa",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 养护参考",
+          "url": "https://plants.ces.ncsu.edu/plants/monstera-deliciosa/",
+          "kind": "care",
+          "taxon": "Monstera deliciosa",
+          "accessed": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "snake",
+      "name": "虎尾兰",
+      "latin": "Dracaena trifasciata",
+      "rank": "物种",
+      "scene": "盆栽",
+      "cat": "toxic",
+      "dog": "toxic",
+      "scope": "来源明确列出该分类单元；仍须确认植物身份",
+      "sourceCount": 3,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "ASPCA · snake-plant",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/snake-plant",
+          "kind": "toxicity",
+          "taxon": "Sansevieria trifasciata",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 分类与特征",
+          "url": "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/",
+          "kind": "taxonomy",
+          "taxon": "Dracaena trifasciata；列有旧名 Sansevieria trifasciata",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 养护参考",
+          "url": "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/",
+          "kind": "care",
+          "taxon": "Dracaena trifasciata",
+          "accessed": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "phalaenopsis",
+      "name": "蝴蝶兰属 · 总览",
+      "latin": "Phalaenopsis spp.",
+      "rank": "属级总览",
+      "scene": "盆栽与花材",
+      "cat": "low",
+      "dog": "low",
+      "scope": "属级资料，仅作该属参考，不是具体品种鉴定",
+      "sourceCount": 3,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "ASPCA · phalaenopsis-orchid",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/phalaenopsis-orchid",
+          "kind": "toxicity",
+          "taxon": "Phalaenopsis spp.",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 分类与特征",
+          "url": "https://plants.ces.ncsu.edu/plants/phalaenopsis/",
+          "kind": "taxonomy",
+          "taxon": "Phalaenopsis spp.",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 养护参考",
+          "url": "https://plants.ces.ncsu.edu/plants/phalaenopsis/",
+          "kind": "care",
+          "taxon": "Phalaenopsis spp.",
+          "accessed": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "boston",
+      "name": "波士顿蕨（Bostoniensis）",
+      "latin": "Nephrolepis exaltata 'Bostoniensis'",
+      "rank": "栽培品种",
+      "scene": "盆栽",
+      "cat": "low",
+      "dog": "low",
+      "scope": "来源名称写法与园艺名称存在差异，已保留原文，待人工专业复核",
+      "sourceCount": 3,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录",
+        "来源学名写法差异待人工复核"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "ASPCA · boston-fern",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/boston-fern",
+          "kind": "toxicity",
+          "taxon": "Nephrolepis exalta bostoniensis（来源原文）",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 分类与特征",
+          "url": "https://plants.ces.ncsu.edu/plants/nephrolepis-exaltata/",
+          "kind": "taxonomy",
+          "taxon": "Nephrolepis exaltata 及其品种",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 养护参考",
+          "url": "https://plants.ces.ncsu.edu/plants/nephrolepis-exaltata/",
+          "kind": "care",
+          "taxon": "Nephrolepis exaltata（物种级参考）",
+          "accessed": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "parlor",
+      "name": "袖珍椰子",
+      "latin": "Chamaedorea elegans",
+      "rank": "物种",
+      "scene": "盆栽",
+      "cat": "low",
+      "dog": "low",
+      "scope": "来源明确列出该分类单元；仍须确认植物身份",
+      "sourceCount": 3,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "ASPCA · parlor-palm",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/parlor-palm",
+          "kind": "toxicity",
+          "taxon": "Chamaedorea elegans",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 分类与特征",
+          "url": "https://plants.ces.ncsu.edu/plants/chamaedorea-elegans/",
+          "kind": "taxonomy",
+          "taxon": "Chamaedorea elegans",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 养护参考",
+          "url": "https://plants.ces.ncsu.edu/plants/chamaedorea-elegans/",
+          "kind": "care",
+          "taxon": "Chamaedorea elegans",
+          "accessed": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "pachira",
+      "name": "瓜栗（P. aquatica）",
+      "latin": "Pachira aquatica",
+      "rank": "物种",
+      "scene": "盆栽",
+      "cat": "low",
+      "dog": "low",
+      "scope": "来源明确列出该分类单元；仍须确认植物身份",
+      "sourceCount": 3,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "ASPCA · money-tree",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/money-tree",
+          "kind": "toxicity",
+          "taxon": "Pachira aquatica",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 分类与特征",
+          "url": "https://plants.ces.ncsu.edu/plants/pachira-aquatica/",
+          "kind": "taxonomy",
+          "taxon": "Pachira aquatica",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 养护参考",
+          "url": "https://plants.ces.ncsu.edu/plants/pachira-aquatica/",
+          "kind": "care",
+          "taxon": "Pachira aquatica",
+          "accessed": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "kalanchoe",
+      "name": "长寿花",
+      "latin": "Kalanchoe blossfeldiana",
+      "rank": "物种",
+      "scene": "盆栽",
+      "cat": "toxic",
+      "dog": "toxic",
+      "scope": "参考属级毒性资料；尚未收录本物种或具体品种的独立毒性证据",
+      "sourceCount": 3,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "ASPCA · kalanchoe",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/kalanchoe",
+          "kind": "toxicity",
+          "taxon": "Kalanchoe spp.",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 分类与特征",
+          "url": "https://plants.ces.ncsu.edu/plants/kalanchoe-blossfeldiana/",
+          "kind": "taxonomy",
+          "taxon": "Kalanchoe blossfeldiana",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 养护参考",
+          "url": "https://plants.ces.ncsu.edu/plants/kalanchoe-blossfeldiana/",
+          "kind": "care",
+          "taxon": "Kalanchoe blossfeldiana",
+          "accessed": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "id": "azalea",
+      "name": "杜鹃属 · 总览",
+      "latin": "Rhododendron spp.",
+      "rank": "属级总览",
+      "scene": "盆栽与庭院",
+      "cat": "high",
+      "dog": "high",
+      "scope": "属级资料，仅作该属参考，不是具体品种鉴定",
+      "sourceCount": 3,
+      "missing": [
+        "待兽医复核",
+        "待分类/园艺复核",
+        "待实拍照片与许可记录"
+      ],
+      "ready": false,
+      "sources": [
+        {
+          "title": "ASPCA · azalea",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/azalea",
+          "kind": "toxicity",
+          "taxon": "Rhododendron spp.",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 分类与特征",
+          "url": "https://plants.ces.ncsu.edu/plants/rhododendron/",
+          "kind": "taxonomy",
+          "taxon": "Rhododendron spp.",
+          "accessed": "2026-10-21"
+        },
+        {
+          "title": "NC State Extension · 养护参考",
+          "url": "https://plants.ces.ncsu.edu/plants/rhododendron/",
+          "kind": "care",
+          "taxon": "Rhododendron spp.",
+          "accessed": "2026-10-21"
+        }
+      ]
+    }
+  ]
+}
