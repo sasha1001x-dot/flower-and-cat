@@ -1,4 +1,4 @@
-const identities=require('../data/identities.json');
+const identities=require('../data/identities.js');
 const categories = ['养护心得','隔离防护','接触经历'];
 const pets = ['猫咪','狗狗','猫狗家庭'];
 function validate(input) {

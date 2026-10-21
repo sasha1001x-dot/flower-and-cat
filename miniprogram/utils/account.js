@@ -1,4 +1,4 @@
-const identities=require('../data/identities.json');
+const identities=require('../data/identities.js');
 const config=require('../config');
 const POLICY_VERSION='draft-2026-10-20';
 let current=null;
@@ -11,6 +11,6 @@ async function save(nickname,avatarFileID,identityType){if(identityType!==undefi
 async function bindPhone(code){if(local())throw new Error('本地体验不收集手机号，部署微信云服务后才能授权绑定');if(!code)throw new Error('未获得手机号授权，可稍后绑定');current=await invoke('bindPhone',{code});return current;}
 function logout(){signedOut=true;current=null;wx.removeStorageSync('huamao-demo-signed-in');wx.reLaunch({url:'/pages/login/login'});}
 function safeNext(value){return /^\/pages\/(index\/index|library\/library|shop\/shop|growth\/growth|identify\/identify|account\/account|detail\/detail\?id=[a-z0-9-]+)$/.test(value||'')?value:'/pages/index/index';}
-async function requireAccount(next){try{const p=await me();if(p)return p;}catch(_){/* Login page exposes service error and retry. */}wx.reLaunch({url:'/pages/login/login?next='+encodeURIComponent(safeNext(next))});return null;}
+async function requireAccount(next){try{const p=await me();if(p&&identities.some(x=>x.value===p.identityType))return p;}catch(_){/* Login page exposes service error and retry. */}wx.reLaunch({url:'/pages/login/login?next='+encodeURIComponent(safeNext(next))});return null;}
 function ownerKey(kind,id){if(!current)throw new Error('请先登录');return 'huamao-'+kind+'-'+current.id+(id?'-'+id:'');}
 module.exports={POLICY_VERSION,local,me,login,save,bindPhone,logout,requireAccount,safeNext,ownerKey};

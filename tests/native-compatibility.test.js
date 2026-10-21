@@ -1,0 +1,6 @@
+const test=require('node:test');const assert=require('node:assert/strict');const fs=require('node:fs');const path=require('node:path');const vm=require('node:vm');
+const root=path.resolve(__dirname,'../miniprogram');
+function files(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?files(path.join(dir,e.name)):[path.join(dir,e.name)])}
+test('native JavaScript dependencies use modules that exist, never raw JSON',()=>{for(const file of files(root).filter(f=>f.endsWith('.js'))){for(const m of fs.readFileSync(file,'utf8').matchAll(/require\(['"]([^'"]+)['"]\)/g)){assert.ok(!m[1].endsWith('.json'),file);if(m[1].startsWith('.')){const p=path.resolve(path.dirname(file),m[1]);assert.ok(fs.existsSync(p)||fs.existsSync(p+'.js'),file+': '+m[1])}}}});
+test('generated native data modules match canonical JSON',()=>{for(const name of ['identities','library-notice'])assert.deepEqual(require('../miniprogram/data/'+name+'.js'),require('../miniprogram/data/'+name+'.json'))});
+test('WXML expressions use JavaScript operators rather than HTML entities',()=>{for(const file of files(root).filter(f=>f.endsWith('.wxml'))){for(const m of fs.readFileSync(file,'utf8').matchAll(/{{([\s\S]*?)}}/g)){assert.ok(!/&(?:amp|lt|gt);/.test(m[1]),file);assert.doesNotThrow(()=>new vm.Script('('+m[1]+')'),file)}}});
